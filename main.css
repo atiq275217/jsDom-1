@@ -1,0 +1,236 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	background-color: black;
+	font-family: 'PT Serif', serif;
+	color: #fff;
+
+}
+/* ====== common css ======*/
+.container{
+	width: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.container:before,
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.col100{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col50{
+	width: 50%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col33{
+	width: 33.33%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col25{
+	width: 25%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+button:hover{
+	background-color: black;
+	color: #ffff;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-radius: 10%;
+	transition: 1s;
+	
+}
+button{
+	animation-name: exeample;
+	animation-duration: 2s;
+}
+@keyframes exeample{
+	from {background-color: red;}
+	to {background-color: green;}
+}
+/*End common Css*/
+
+.abc{
+	color: red;
+}
+.elements{
+	width: 100%;
+	height: 1128px;
+	border: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+}
+.htmldom{
+	width: 100%;
+	height: 628px;
+	border: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+}
+.cssdom{
+	width: 100%;
+	height: 430px;
+	border: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+}
+/*=====================
+domAnimations
+===================*/
+.domAnimations{
+	width: 100%;
+	height: 550px;
+	border: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+}
+#content_animate{
+	width: 400px;
+	height: 400px;
+	position: relative;
+	background: yellow;
+}
+#dom_animate{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: red;
+}
+/*=================
+Dom Event
+===========*/
+.domEvent{
+	width: 100%;
+	height: 930px;
+	border: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+}
+		/*==from js*/
+.domeveNtjsClass{
+	color: red;
+	font-size: 30px;
+	font-family: Georgia, 'Times New Roman', serif;
+	border: 1px solid blue;
+	border-radius: 15px;
+
+}
+.domeveNtjsClass:hover{
+	color: blue;
+	border: 0px;
+	font-size: 40px;
+	cursor: pointer;
+	
+}
+		/*==/.from ja*/
+
+
+/*===The onmouseover and onmouseout onmousedown, onmouseup and onclick Events*/
+.onmousOver_out{
+	width: 150px;
+	height: 120px;
+	background: yellow;
+	padding: 40px;
+	color: red;
+	font-weight: 900;
+	text-align: center;
+}
+.mousPlay{
+	width: 150px;
+	height: 120px;
+	background: #D94A38;
+	padding: 40px;
+	font-weight: 900;
+	text-align: center;
+	
+}
+
+/*=========================
+JavaScript HTML DOM Navigation
+========================*/
+.domNodes{
+	width: 100%;
+	height: 315px;
+	border: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+}
+
+.domCollections{
+	width: 100%;
+	height: 270px;
+	border: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+}
+.browser_bom{
+	width: 100%;
+	height: 1550px;
+	border: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+}
+.jsvsjQuery{
+	width: 100%;
+	height: 2750px;
+	border: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================
+Bottom Clock Area
+==================*/
+#clock_local {
+    border: 2px solid blue;
+    border-radius: 15px;
+    color: red;
+    width: 400px;
+    padding: 10px;
+}
