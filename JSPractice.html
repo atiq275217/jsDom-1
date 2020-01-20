@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS W3 Practice</title>
+	<link rel="stylesheet" href="/Atiq/JSW3/jsdom/css/main.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="abc">JS HTML DOM</h1>
+		<div class="elements">
+			<h2>JavaScript HTML DOM Elements</h2>
+			<!-- Finding HTML Element by Id -->
+			<h3>Finding HTML Element by Id</h3>
+			<p id="elementsby_Id">Hello World!</p>
+			<p>This example demonstrates the <b>getElementsById</b> method.</p>
+			<p style="color: blue;" id="elementsby_Id_1"></p>
+
+			<!-- ==Finding HTML Elements by Tag Name -->
+			<h3>Finding HTML Elements by Tag Name</h3>
+			<p>Hello Bangladesh!</p>
+			<p>This example demonstrates the <p>getElementsByTagName</b> method.</p>
+			<p style="color: red;" id="elementsby_Tag_1"></p>
+
+			<h4>Or</h4>
+			<div id="main">
+			<p>The DOM is very useful.</p>
+			<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+			<p>This example finds the element with id="main", and then finds all <'p'> elements inside "main":</p>
+			</div>
+			<p style="color: blue;" id="elementsby_Tag_2"></p>
+
+			<!-- ==Finding HTML Elements by Class Name -->
+			<h3>Finding HTML Elements by Class Name</h3>
+			<p class="class_name">The DOM is very useful.</p>
+			<p class="class_name">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+			<p style="color: red;" id="elementsby_className"></p>
+
+			<!-- ==Finding HTML Elements by CSS Selectors -->
+			<h2>Finding HTML Elements by CSS Selectors</h2>
+			<h2 style="color: green;">Finding HTML Elements by Query Selector</h2>
+			<p class="query_selectorall">The DOM is very useful.</p>
+			<p>This example demonstrates the <b>querySelectorAll</b> method.</p>
+			<p>If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the <b style="color: red;">querySelectorAll() </b> method.</p>
+			<p style="color: blue;" id="elementsby_query_selector"></p>
+
+			<!-- ==Finding HTML Elements by HTML Object Collections -->
+			 <!-- ======From===Form.html=== -->
+	
+		</div>  <!-- /.elements -->
+		<div class="htmldom">
+			<!-- ==JavaScript HTML DOM - Changing HTML== -->
+			<h2>JavaScript HTML DOM - Changing HTML</h2>
+			<h2>Changing the HTML Output Stream</h2>
+			<p>In JavaScript, <i style="color: red;">document.write()</i> can be used to write directly to the HTML output stream:</p>
+			<script>
+				document.write(Date());
+			</script>
+
+			<!-- Changing HTML Content -->
+			<h2>Changing HTML Content</h2>
+			<h2>JavaScript can Change HTML</h2>
+			<p style="color: green;" id="change_html">Hello world</p>
+			<p>The paragraph above was changed by a script.</p>
+
+			<!-- ==Changing the Value of an Attribute== -->
+			<img id="changed_voFattriBute" src="/Atiq/JSW3/jsdom/img/bangladesh1.jpg" width="160" height="120" alt="atiq">
+			<br>
+			<button onclick="img_change()">Click</button>
+			<p><b style="color: green;">Click The Button And </b>The original image was <i style="color: red;">bangladesh1.jpg</i>, but the script changed it to <i style="color: red;">bangladesh2.jpg</i></p>
+
+		</div> <!-- /.htmldom -->
+
+		<div class="cssdom">
+			<h2>JavaScript HTML DOM - Changing CSS</h2>
+			<h3 style="color: red;">Changing HTML Style</h3>
+			<p id="changed_style">Hellow Bangladesh</p>
+			<button onclick="shanged_css()">Click Me</button>
+			<p><b style="color: red;">Click Button</b> The paragraph above was changed by a script.</p>
+
+			<!-- Using Events -->
+			<h2>Using Events</h2>
+			<p id="some_events" style="color: blue;">My Shirt Color is White</p>
+			<button type="button" 
+			onclick="document.getElementById('some_events').style.fontSize='30px'" >
+			Click Me!</button>
+		</div> <!-- /.cssdom -->
+
+		<div class="domAnimations">
+			<h2>JavaScript HTML DOM Animation</h2>
+			<p><button onclick="dAniMte()">Click Me!</button></p>
+			<div id="content_animate">
+				<div id="dom_animate"></div>
+			</div>
+		</div> <!-- /.domAnimations -->
+
+		<!-- JavaScript HTML DOM Events -->
+		<div class="domEvent">
+			<h2>JavaScript HTML DOM Events</h2>
+			<h3 onclick="changeText(this)">Click on this text!</h3>
+
+			<h2>HTML Event Attributes</h2>
+			<p>Click the button to display the date.</p>
+			<button onclick="displayDate()">Click Me and See below the Time</button>
+			<p id="dsply_date"></p>
+
+			<!-- Assign Events Using the HTML DOM -->
+			<h2>Assign Events Using the HTML DOM</h2>
+			<p>Click "Try it" to execute the displayDate() function.</p>
+			<button id="dsdById">Try it</button>
+			<p id="dsply_date_2"></p>
+
+			<!-- The onchange Event -->
+			<h2>The onchange Event</h2>
+			<p>When you leave the input field, a function is triggered which transforms the input text to <b style="color: red;">upper case</b>.</p>
+			Enter your name: <input type="text" id="fname" onchange="change_To_upperCase()">
+
+		<!-- The onmouseover and onmouseout Events -->
+			<h2>The onmouseover and onmouseout Events</h2>
+			<div class="onmousOver_out" onmouseover="mOver(this)" onmouseout="mOut(this)">Mouse Over Me</div>
+
+			<!-- The onmousedown, onmouseup and onclick Events -->
+			<h2>The onmousedown, onmouseup and onclick Events</h2>
+			<div class="mousPlay" onmousedown="mDown(this)" onmouseup="mUp(this)" onclick="oClk(this)">Click Me!</div>
+
+		</div> <!-- /.JavaScript HTML DOM Events -->
+
+
+		<!-- JavaScript HTML DOM Elements (Nodes) -->
+		<div class="domNodes">
+			<h2>JavaScript HTML DOM Elements (Nodes)</h2>
+			<h3>Removing Existing HTML Elements</h3>
+			<div>
+			<p>To remove an HTML element, use the <b style="color: red;">remove()</b> method:</p>
+			<p id="reMov_1" style="color: red;">This is a paragraph.</p>
+			<p id="reMov_2">This is another paragraph.</p>
+			</div>
+			<button onclick="remoVe_doc()">Remove Element</button>
+
+		</div> <!-- /.JavaScript HTML DOM Elements (Nodes) -->
+
+		<!-- DOM Collections -->
+		<div class="domCollections">
+			<h2>DOM Collections</h2>
+			<p>Hello World!</p>
+			<p>Hello Norway!</p>
+			<p>Click the button to change the color of all p elements.</p>
+			<button onclick="dom_Collections()">Try it</button>	
+		</div><!--  /.DOM Collections -->
+
+		<!-- Js Browser Bom -->
+		<div class="browser_bom">
+			<h2>JS BROWSER BOM</h2>
+			<h2>Js Location</h2>
+			<h3>The window.location object</h3>
+			<input type="button" value="Load new document" onclick="js_location()">
+
+
+			<!-- Js History -->
+			<h2>Js History</h2>
+			<button onclick="Goback()">Back</button>
+			<button onclick="Goforward()">Forward</button>
+
+			<!-- JavaScript Popup Boxes -->
+			<h2>JavaScript Popup Boxes</h2>
+			<h2>Alert Box</h2>
+			<button onclick="alert_box()">Try iT!</button>
+
+			<!-- Confirm Box -->
+			<h2>Confirm Box</h2>
+			<button onclick="confirm_Box()">Click Me</button>
+			<p id="conBox"></p>
+
+			<!-- Prompt Box -->
+			<h2>Prompt Box</h2>
+			<button onclick="prompt_box()">Click here</button>
+			<p id="promBox" style="color: red;"></p>
+
+			<!-- Line Breaks -->
+			<h2>JavaScript Line Breaks</h2>
+			<p>Line-breaks in a popup box.</p>
+			<button onclick="alert('Hello\nHow are you?')">Click here</button>
+
+			<!-- JavaScript Timing Events -->
+			<h2>JavaScript Timing Events</h2>
+			<p>Click "Try it". Wait <b style="color: red;">2</b> seconds, and the page will alert "Hello".</p>
+			<button onclick="setTimeout(timeOut_eveNt, 2000);">Click Me!</button>
+
+			<!-- How to Stop the Execution? -->
+			<h2>How to Stop the Execution?</h2>
+			<p>Click "Try it". Wait 3 seconds. The page will alert "Hello".</p>
+			<p>Click "Stop" to prevent the first function to execute.</p>
+			<p>(You must click "Stop" before the 3 seconds are up.)</p>
+			<button onclick="amarVar = setTimeout(time_Stop, 3000)">Try it</button>
+			<button onclick="clearTimeout(amarVar)">Stop it</button>
+
+			<!-- The setInterval() Method -->
+			<h2>The setInterval() Method</h2>
+			<p>A script on this page starts this clock:</p>
+			<p id="stinerVar_clock" style="color: blue;"></p>
+
+			<!-- How to Stop the Execution? -->
+			<h2>How to Stop the Execution?</h2>
+			<p>The <i style="color: red;">clearInterval()</i> method stops the executions of the function specified in the <i style="color: red;">setInterval() </i>method.</p>
+			<p>A script on this page starts this clock:</p>
+			<p id="stop_clock" style="color: green;"></p>
+			<button onclick="clearInterval(clock_stOp)">Stop time</button>
+
+		</div> <!-- /.Js Browser Bom -->
+
+		<!-- ==========JS VS jQuery======== -->
+		<div class="jsvsjQuery">
+			<h2>JS VS jQuery</h2>
+			<h2>Finding HTML Elements by Id</h2>
+			<p id="ebid1">Hello World!</p>
+			<p id="ebid2">Hello Bangladesh!</p>
+			<p id="ebid3">Hello Pakistan!</p>
+
+			<p id="ebid" style="color:red;"></p>
+
+			<h2>Finding HTML Elements by Tag Name</h2>
+			<p id="ebtn1">Hello World!</p>
+			<p id="ebtn2">Hello Bangladesh!</p>
+			<p id="ebtn3">Hello Pakistan!</p>
+
+			<p id="ebtn" style="color:red;"></p>
+
+			<!-- Finding HTML Elements by Class Name -->
+			<h2>Finding HTML Elements by Class Name</h2>
+			<p class="ebcn1">Hello World!</p>
+			<p class="ebcn1">Hello Sweden!</p>
+			<p class="ebcn1">Hello Japan!</p>
+
+			<p id="ebcn" style="color:red;"></p>
+
+			<!-- Finding HTML Elements by CSS Selectors -->
+
+			<h2>Finding HTML Elements by CSS Selectors</h2>
+			<p class="ebcss1">Hello World!</p>
+			<p class="ebcss1">Hello Sweden!</p>
+			<p class="ebcss1">Hello Japan!</p>
+
+			<p id="ebcss" style="color:red;"></p>
+
+			<!-- jQuery HTML -->
+			<h2 style="color: green;">jQuery HTML</h2>
+
+			<h2>JavaScript / jQuery HTML Elements</h2>
+			<!-- ============Set Text Content======= -->
+			<h3>Set Text Content</h3>
+			<h3>Setting Text Conten</h3>
+			<p id="stc1" style="color: red;">Hello India</p>
+			<p id="stc2">Hello Pakisthan</p>
+
+			<!-- =========Get Text Content====== -->
+			<h2>Get Text Content</h2>
+			<h3>Getting Text Content</h3>
+
+			<p id="gtc1">Hello A Rahim</p>
+			<p id="gtc2">Hello A Rahman</p>
+			<p id="gtc3">Hello A karim</p>
+
+			<p id="gtc4" style="color: blue;"></p>
+
+			<!-- =========Set HTML Content==== -->
+			<h2>Set HTML Content</h2>
+			<div id="shtc1">
+				<h3>Our Bangladesh</h3>
+			</div>
+			<div id="shtc2">
+				<h2>Our Country</h2>
+			</div>
+
+			<p id="shtc3"></p>
+
+			<!-- =====Get HTML Content======= -->
+			<h2>Get HTML Content</h2>
+			<div id="ghtc1" style="color: green;">
+				<h3>Our Bangladesh</h3>
+			</div>
+			<div id="ghtc2">
+				<h2>Our Country</h2>
+			</div>
+
+			<p id="ghtc3"></p>
+
+			<!-- ===JavaScript / jQuery CSS Styles============ -->
+			<h2 style="color:red;">JavaScript / jQuery CSS Styles</h2>
+			<h2>Hiding HTML Elements</h2>
+			<p id="hte1">Hello US</p>
+			<p id="hte2">Hello PS</p>
+			<p id="hte3">Hello BD</p>
+
+			<!-- ======Showing HTML Elements======= -->
+			<h2>Showing HTML Elements</h2>
+			<h3 id="showt1" style="display: none; color: blue;">Hello Bangladesh</h3>
+			<h3 id="showt2" style="display: none; color: blue;">Hello Pakistan</h3>
+
+			<!-- =====Styling HTML Elements== -->
+			<h2>Styling HTML Elements</h2>
+			<i style="color: green;">Change the font size of an HTML element:</i>
+
+			<p id="changeCss">JavaScript can change the style of an HTML element.</p>
+
+			<!-- ==JavaScript / jQuery HTML DOM=== -->
+			<h2 style="color: red;">JavaScript / jQuery HTML DOM</h2>
+			<h2>Removing Elements</h2>
+			<h2>Remove an HTML Element</h2>
+
+			<p style="color: blue;" id="remove_htmlemnt1">Hello Bangladesh</p>
+			<p id="remove_htmlemnt2">Hello India</p>
+
+			<!-- Get Parent Element -->
+			<h2>Get Parent Element</h2>
+			<h2>Getting Parent HTML Element</h2>
+
+			<p id="parent_htmlE1">Hello world!</p>
+			<p id="parent_htmlE2">Hello Sweden!</p>
+			<p id="parent_htmlE3">Hello Japan!</p>
+
+			<p id="parent_htmlE4"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		
+
+
+
+
+
+
+		
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1 id="clock_local"></h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<img src="/Atiq/JSW3/img/---.JPG" alt="Img Link">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div> <!-- /container -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/Atiq/JSW3/jsdom/w3main.js"></script>
+	
+
+</body>
+</html>
